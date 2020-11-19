@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)
+project(Transportes)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+# set(SRC_FILES main.c transport.c transport.h)
+add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE main.c transport.h transport.c)
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER "CFTransport")
